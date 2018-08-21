@@ -2,8 +2,11 @@
 const staticAssets = [
     './',
     './app.css',
-    './app.js'
+    './app.js',
+    './fallback.json',
+    './images/fetch-dog.jpg'
 ]
+
 self.addEventListener('install',async event =>{
      //use the cache api 
      const cache = await caches.open('news-static');
