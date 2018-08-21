@@ -2,9 +2,15 @@ const api = '62b4debbbf7547f480258f3a583616f1';
 const main = document.querySelector('main');
 const selector = document.querySelector('#sourceSelector');
 const defaultSource = 'the-washington-post';
-window.addEventListener('load', e =>{
+
+window.addEventListener('load',async e =>{
     updateNews();
-    updateSources();
+    await updateSources();
+    selector.value = defaultSource;
+
+    selector.addEventListener('change',e=>{
+        updateNews(e.target.value);
+    });
 });
 // get the news 
 async function updateNews(source = defaultSource) {
