@@ -1,7 +1,45 @@
 body{
-    
     font-family: lato;
     font-size: 14px;
     margin: 0px;
-    padding: 0px;
+    padding:5px;
+    color: #272727; 
+    text-decoration: none; 
+}
+p{
+    color: #272727;
+}
+h1,h2,h3,h4{
+    color: black;
+    text-decoration: none; 
+}
+a,article:hover{
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline;
+}
+header,
+footer,
+main {
+    max-width: 480px;
+    margin: 0 auto;
+}
+.caption{
+    width: 480px;
+    height: auto;
+}
+.caption img{
+    width:100%;
+}
+@media(max-width:480px) {
+    header,
+    footer,
+    main {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .caption {
+        width: 100% !important;
+    }
 }
