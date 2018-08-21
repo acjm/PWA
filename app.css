@@ -4,20 +4,20 @@ body{
     margin: 0px;
     padding:5px;
     color: #272727; 
-    text-decoration: none; 
+    text-decoration: none !important; 
 }
 p{
     color: #272727;
 }
 h1,h2,h3,h4{
     color: black;
-    text-decoration: none; 
+    text-decoration: none !important; 
 }
 a,article:hover{
-    text-decoration: none; 
+    text-decoration: none !important; 
 }
 a:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 header,
 footer,
